@@ -54,5 +54,5 @@ jobs:
         continue-on-error: true
 
       - name: Terraform plan status
-        if: steps.plan.outcome == 'failue'
+        if: steps.plan.outcome == 'failure'
         run: exit 1
